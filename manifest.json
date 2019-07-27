@@ -1,6 +1,6 @@
 {
 "name":"Inject DOM",
-"description":"http://stackoverflow.com/questions/14068879",
+"description":"Slang removal Tool",
 "version":"1",
 "manifest_version":2, "background": {
     "scripts": [
