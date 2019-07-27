@@ -1,0 +1,134 @@
+<!Doctype html>
+<html>
+    <head>
+       <link rel="stylesheet" href="spec.css">
+       <link rel="stylesheet" href="spec-icons.css">
+       <link rel="stylesheet" href="spec-exp.css">
+   
+    </head>
+    
+<body >
+ 
+ <header class="navbar">
+  <section class="navbar-section">
+    <a href="#" class="navbar-brand mr-10">E#ashID</a>
+    <a href="#" class="btn btn-link">About Us</a>
+    <a href="#" id="logout" class="btn hideIfLoggedOut btn-link">Logout</a>
+    <a href="#" id="turnOff" class="btn hideIfLoggedOut btn-link"><i class="success load icon icon-shutdown"></i></a>
+  </section>
+
+</header>
+  <ul  al-if="loggedIn" class="tab tab-block">
+  <li class="tab-item active">
+    <a href="#"><i class="icon icon-edit"></i></a>
+  </li>
+  <li class="tab-item">
+    <a href="#" class=""><i class="icon icon-bookmark"></i></a>
+  </li>
+  <li class="tab-item">
+    <a href="#"><i class="icon icon-link"></i></a>
+  </li>
+  <li class="tab-item">
+    <a href="#">Wiki</a>
+  </li>  <li class="tab-item">
+    <a href="#"><i class="icon icon-more-vert"></i></a>
+  </li>
+  
+</ul>
+ 
+ 
+  <ul  al-if-not="loggedIn" class="tab tab-block IfLoggedOut">  <li class="tab-item active">
+    <a href="#" class=""><i class="icon icon-people"></i></a>
+  </li>
+  <li class="tab-item ">
+    <a href="#"><i class="icon icon-edit"></i></a>
+  </li>
+
+  <li class="tab-item">
+    <a href="#"><i class="icon icon-link"></i></a>
+  </li>
+  <li class="tab-item">
+    <a href="#">Wiki</a>
+  </li> </ul>
+   <div id="ifLoggedIn">
+    <h2></h2>
+    </div>
+    <h4 al-if-not="loggedIn"  class="text-center">Login <small class="label">E#ashID</small></h4>
+<form al-if-not="loggedIn"  class="login"><div class="form-group">
+
+    <label class="form-label" for="username">Username</label>
+    <input class="form-input" type="text" name="username" id="username" placeholder="Name" />  
+    
+      <label class="form-label" for="password">Password</label>
+    <input class="form-input" type="password" name="password" id="password" placeholder="Name" />
+<input class="btn btn-block" type="submit">
+  </div>
+</form>
+<div al-if-not="loggedIn"  class="divider text-center" data-content="OR"></div>
+   
+<h4 al-if-not="loggedIn"  class="text-center">Sign Up <small class="label">E#ashID</small></h4>
+   <form  al-if-not="loggedIn" class="signup"><div class="form-group">
+
+    <label class="form-label" for="username">Username</label>
+    <input class="form-input" type="text" name="username" id="username" placeholder="Name" />  
+    
+      <label class="form-label" for="password">Password</label>
+    <input class="form-input" type="password" name="password" id="password" placeholder="Name" />
+<input class="btn btn-block" type="submit">
+  </div>
+</form>
+
+    <div id="asdgaeh234jl32jtklajweg890jakjcvsdklgm">
+        
+        
+        
+    </div>
+    
+    <h3></h3>
+    <div id="app">
+    
+    </div> 
+    
+<div class="modal active">
+  <div class="modal-overlay"></div>
+  <div class="modal-container">
+    <div class="modal-header">
+      <button class="btn closeModal btn-clear float-right"></button>
+      <div class="modal-title">Update Bookmark</div>
+    </div>
+    <div class="modal-body">
+      <div class="content"><form>
+  <!-- form input control -->
+  <div class="form-group">
+    <label class="form-label" for="input-example-1">Name</label>
+    <input class="form-input" type="text" id="input-example-1" placeholder="Name" />
+  </div>
+  <!-- form textarea control -->
+  <div class="form-group">
+    <label class="form-label" for="input-example-3">Description</label>
+    <textarea class="form-input" id="input-example-3" placeholder="Textarea" rows="3"></textarea>
+  </div>
+
+</form>
+      </div>
+    </div>
+    <div class="modal-footer"> <button class="btn">Delete</button>
+     <button class="btn btn-primary">Update</button>
+    </div>
+  </div>
+</div>
+    
+    <div class="bar bar-sm progress">
+  <div class="bar-item" role="progressbar" style="width:0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+</div>
+  <script src="qrcode.min.js"></script>    
+  <script src="jquery.js"></script>    
+    <script src="firebase.js"></script>
+    <script src="jq-ajax-prog.js"></script>
+    <script src="popup.js">
+ 
+    </script>
+   
+</body>    
+    
+</html>

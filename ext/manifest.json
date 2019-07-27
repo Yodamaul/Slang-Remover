@@ -1,0 +1,48 @@
+{  
+   "name":"E#ASHID",
+   "description":"The Official Chrome Extension for E#ASHID",
+   "version":"1",
+   "permissions":[  
+      "storage",
+      "tabs",
+       "contextMenus"
+   ],
+   "manifest_version":2,
+   "background":{  
+      "scripts":[ "firebase.js",
+          "background.js"
+      ]
+   },
+   "browser_action":{  
+      "default_popup":"popup.html"
+   },
+   "options_page":"options.html",
+       "content_scripts":[  
+      {  
+         "matches":[  
+            "http://*/*",
+            "https://*/*"
+         ],
+         "js":[  
+            "jquery.js",
+            "highlight.js",
+            "firebase.js",
+            "popper.js",
+            "script.js"
+         ],
+         "css":[  
+            "style.css"
+         ],
+         "run_at":"document_end"
+      }
+   ],
+     "commands": {
+          "toggle-feature-foo": {
+            "suggested_key": {
+              "default": "Ctrl+Shift+Y",
+              "mac": "Command+Shift+Y"
+            },
+            "description": "Toggle feature foo"
+          }}
+    
+}

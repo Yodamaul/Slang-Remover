@@ -1,0 +1,17 @@
+{
+"name":"Inject DOM",
+"description":"http://stackoverflow.com/questions/14068879",
+"version":"1",
+"manifest_version":2, "background": {
+    "scripts": [
+      "jquery.js","highlight.js","firbase.js","popper.js",
+    ]
+  },
+    
+"content_scripts": [
+    {
+      "matches": ["*"],
+      "js": ["script.js"]
+    }
+  ]
+}
